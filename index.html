@@ -4,96 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home Page</title>
     <style>
         html {
-            background-color: crimson;
+            background-color: rgb(211, 188, 159);
         }
-        h1 {
+        body {
+            border: 1px solid black;
+            width: 70%;
+            margin: 10px auto 10px auto;
+        }
+
+        #header {
             text-align: center;
-        }
-
-        #content {
+            padding: 5px 10px 5px 10px;
             border: 1px solid black;
-            background-color: rgb(0, 204, 255);
-            margin: auto;
-            width: 75%;
-            padding: 10px;
-            border-radius: 10px;
-        }
-
-        #bigContainer {
-            background-color: rgb(18, 139, 34);
-            display: flex;
-            justify-content: space-around;
-            padding: 10px;
-            border: 1px solid black;
-            border-radius: 10px;
-
-        }
-
-        #smallContainer {
+            margin: 8px auto 8px auto;
             width: 30%;
         }
 
-        .smallBox {
+        .text {
             border: 1px solid black;
-            background-color: maroon;
-            margin: 10px;
-            padding: 4px;
-
+            margin: 10px 15% 10px 15%;
+            background-color: darkseagreen;
+            width: 70%;
+            justify-content: center;
+            overflow: hidden;
         }
 
-        .bigBox {
+        #linkBox {
+            float: left;
             border: 1px solid black;
-            background-color: maroon;
-            margin: 10px;
-            padding: 4px;
-            width: 50%;
-           
+            padding: 10px 5px 5px 20px;
+            margin: 0px;
+            margin: 0px 48px 0px 48px;
         }
-        .allBoxes {
-            border: 1px solid black;
-            box-shadow: 5px 5px 1px black;
+
+        .imgs {
+            float: left;
+            text-align: center;
+            height: max-content;
         }
     </style>
 </head>
 
 <body>
-    <div id="content">
-        <h1>Header</h1>
-        <div id="bigContainer">
-            <div id="smallContainer">
-                <div class="smallBox allBoxes">
-                    <h2>About</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti iste, nam, molestias magnam
-                        quis corporis esse laboriosam a iusto inventore nihil quisquam fuga voluptates ea. Atque dolor
-                        inventore possimus debitis?</p>
-                </div>
-                <div class="smallBox allBoxes">
-                    <h2>Game</h2>
-                    <p>Click <a href="game/gettoschool5/index.html">here</a> to play</p>
-                </div>
-                <div class="smallBox allBoxes">
-                    <h2>Image</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, laudantium maiores! Totam
-                        inventore odit veniam aperiam ducimus sed, corporis, cum fugiat consequatur dolores consequuntur
-                        expedita. Quisquam blanditiis quidem pariatur ad!</p>
-                </div>
-            </div>
-            <div class="bigBox allBoxes">
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est culpa modi doloremque fugit minus
-                    quaerat dolore, asperiores maiores qui accusantium corrupti. Iste ut fugiat neque aut ea porro
-                    laudantium nulla.</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat inventore quam aut consequuntur
-                    ipsam magnam doloremque, cum expedita soluta nam dolore dolorem magni molestiae consectetur ex, hic
-                    praesentium tempora amet.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis accusamus veniam enim temporibus
-                    atque nostrum deleniti commodi veritatis inventore tempora quaerat aliquam dolores minima mollitia
-                    dignissimos ut aliquid, officiis unde.</p>
-            </div>
+    <h1 id="header">Home Page</h1>
+    <div >
+    <ul id="linkBox">
+        <li class="link"><a href="about.html">About</a></li>
+        <li class="link"><a href="game/index.html">My Game</a></li>
+
+    </ul>
+    <div class="text">
+        <h2>My Website</h2>
+        <div class="imgs">
+            <img
+                src="data:image/jpeg;base64,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">
         </div>
+        <p>I ame this website so I can show my projects to everyone who wants to see them my projects include a RPG maker game and a Door game.</p>
     </div>
+    <div class="text">
+        <h2>About</h2>
+        <div class="imgs">
+            <img
+                src="data:image/png;base64,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">
+        </div>
+        <p>This is a website that has a game and a about page.</p>
+    </div>
+</div>
+
 </body>
 
 </html>
